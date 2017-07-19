@@ -192,7 +192,7 @@ th {
   *,
   *:before,
   *:after {
-    color: #000 !important;
+    color: rgb(255, 255, 255) !important;
     text-shadow: none !important;
     background: transparent !important;
     -webkit-box-shadow: none !important;
@@ -253,7 +253,7 @@ th {
   }
   .table td,
   .table th {
-    background-color: #fff !important;
+    background-color: rgb(232, 244, 255) !important;
   }
   .table-bordered th,
   .table-bordered td {
@@ -1085,8 +1085,12 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
+  color: lightgrey;
+  background: linear-gradient(to bottom right, #000099 0%, #800000 100%);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 input,
 button,
@@ -2249,7 +2253,7 @@ pre code {
   }
 }
 table {
-  background-color: transparent;
+  background-color: lightgrey;
 }
 caption {
   padding-top: 8px;
@@ -2259,11 +2263,13 @@ caption {
 }
 th {
   text-align: left;
+  color: black;
 }
 .table {
   width: 100%;
   max-width: 100%;
   margin-bottom: 20px;
+  color: rgb(25, 25, 25)
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -2292,7 +2298,7 @@ th {
   border-top: 2px solid #ddd;
 }
 .table .table {
-  background-color: #fff;
+  background-color: lightgrey;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -2321,7 +2327,7 @@ th {
   background-color: #f9f9f9;
 }
 .table-hover > tbody > tr:hover {
-  background-color: #f5f5f5;
+  background-color: lightblue;
 }
 table col[class*="col-"] {
   position: static;
