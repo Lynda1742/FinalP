@@ -2577,14 +2577,13 @@ output {
           box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 .form-control::-moz-placeholder {
-  color: #999;
-  opacity: 1;
+  color: rgba(75, 75, 75, 1);
 }
 .form-control:-ms-input-placeholder {
-  color: #999;
+  color: rgba(75, 75, 75, 1);
 }
 .form-control::-webkit-input-placeholder {
-  color: #999;
+  color: rgba(75, 75, 75, 1);
 }
 .form-control::-ms-expand {
   background-color: transparent;
@@ -5003,6 +5002,25 @@ a.badge:focus {
   .jumbotron .h1 {
     font-size: 63px;
   }
+}
+.profile {
+  position: fixed;
+  left: 30px;
+  height: 100px;
+  width: 100px;
+}
+@media (max-width: 767px){
+  .profile{
+    display: none;
+  }
+}
+.addev {
+  color: black;
+  background-color: white;
+  border-color: black;
+  height: 30px;
+  width: 75px;
+  font-size: 15px;
 }
 .thumbnail {
   display: block;

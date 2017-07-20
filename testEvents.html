@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Team Stay Woke</a>
+      <a class="navbar-brand" href="testHome.html">Team Stay Woke</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -33,6 +33,7 @@
 </nav>
 
 <div class="container">
+  <img class="img-circle img-responsive profile" src="stay-woke.png" alt="Team Logo">
   <h1><u>Events</u></h1>
   <table class="table table-bordered table-hover">
   <thread>
@@ -51,7 +52,44 @@
         <td>right here</td>
       </tr>
     </tbody>
-  </table
+  </table>
+  <div class="addEvent" id="addEvent">
+    <p class="h3">Add an Event!<p>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="col-sm-2 col-xs-3">Event Name</label>
+        <input type="text" class="col-sm-5" placeholder="Event Name">
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 col-xs-3">Time</label>
+        <input type="text" class="col-sm-5" placeholder="Date">
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 col-xs-3">Location</label>
+        <input type="text" class="col-sm-5" placeholder="Place/Address">
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 col-xs-3">Causes</label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="BLMtag" value="option1"> BLM
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="LGBTtag" value="option2"> LGBTQ+
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="FEMtag" value="option3"> Feminism/Women's Rights
+        </label>
+      </div>
+      <button type="button" class="addev" onclick="addEvent()">Submit</button>
+    </div>
+<!--    <form action="/action_page.php">
+      <select name="cars" multiple>
+        <option value="BLM">BLM</option>
+        <option value="LGBTQ">LGBTQ+</option>
+        <option value="FEM">Feminism/Women's Rights</option>
+      </select>
+    </form> -->
+  </form>
 </div>
 
 </body>
