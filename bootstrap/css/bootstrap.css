@@ -5022,6 +5022,12 @@ a.badge:focus {
   width: 75px;
   font-size: 15px;
 }
+.tabKey {
+  position: fixed;
+  right: 30px;
+  top: 100px;
+  color: white;
+}
 .thumbnail {
   display: block;
   padding: 4px;

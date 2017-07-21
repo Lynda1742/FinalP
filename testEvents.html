@@ -37,7 +37,7 @@
   <img class="img-circle img-responsive profile" src="stay-woke.png" alt="Team Logo">
   <h1><u>Events</u></h1>
   <table class="table table-bordered table-hover" id="tabEv">
-  <thread>
+    <thread>
       <tr>
         <th>Event</th>
         <th>Time</th>
@@ -46,70 +46,131 @@
       </tr>
     </thread>
     <tbody>
-      <tr>
-        <td scope="row">March</td>
-        <td>today</td>
-        <td>right here</td>
-        <td>lgbtq, blm</td>
-      </tr>
     </tbody>
   </table>
+  <div class="tabKey">
+    <ul>
+      <p class="h4"><u>Key to Causes:</u></p>
+      <dl>
+        <li>
+          <dt>BLM</dt>
+          <dd>Black Lives Matter</dd>
+        </li>
+        <li>
+          <dt>LGBT</dt>
+          <dd>Gay Rights</dd>
+        </li>
+        <li>
+          <dt>FEM</dt>
+          <dd>Women's Rights</dd>
+        </li>
+        <li>
+          <dt>IMM</dt>
+          <dd>Immigration Rights</dd>
+        </li>
+        <li>
+          <dt>DIS</dt>
+          <dd>Disability Rights</dd>
+        </li>
+        <li>
+          <dt>EDU</dt>
+          <dd>Education System</dd>
+        </li>
+        <li>
+          <dt>ENV</dt>
+          <dd>Environmental Issues</dd>
+        </li>
+        <li>
+          <dt>GUN</dt>
+          <dd>Gun Rights</dd>
+        </li>
+        <li>
+          <dt>PRI</dt>
+          <dd>Prison Systems</dd>
+        </li>
+        <li>
+          <dt>PROC</dt>
+          <dd>Pro-Choice</dd>
+        </li>
+        <li>
+          <dt>PROL</dt>
+          <dd>Pro-Life</dd>
+        </li>
+        <li>
+          <dt>HEALTH</dt>
+          <dd>Healthcare</dd>
+        </li>
+        <li>
+          <dt>FDT</dt>
+          <dd>Anti-Trump</dd>
+        </li>
+      </dl>
+  </div>
   <div class="addEvent" id="addEvent">
     <p class="h3">Add an Event!<p>
     <form class="form-horizontal">
       <div class="form-group">
         <label class="col-sm-2 col-xs-3">Event Name</label>
-        <input type="text" class="col-sm-5" placeholder="Event Name" id="EvName">
+        <input type="text" class="col-sm-8" placeholder="Event Name" id="EvName">
       </div>
       <div class="form-group">
         <label class="col-sm-2 col-xs-3">Time</label>
-        <input type="text" class="col-sm-5" placeholder="Date/Time" id="EvTime">
+        <input type="text" class="col-sm-8" placeholder="Date/Time" id="EvTime">
       </div>
       <div class="form-group">
         <label class="col-sm-2 col-xs-3">Location</label>
-        <input type="text" class="col-sm-5" placeholder="Place/Address" id="EvLoc">
+        <input type="text" class="col-sm-8" placeholder="Place/Address" id="EvLoc">
       </div>
       <div class="form-group">
         <label class="col-sm-2 col-xs-3">Causes</label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="BLMtag" value="option1"> Black Lives Matter
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="LGBTtag" value="option2"> LGBTQ+
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="FEMtag" value="option3"> Women's Rights
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="IMMtag" value="option4"> Immigration Rights
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="DIStag" value="option5"> Disability Rights
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="EDUtag" value="option6"> Education System
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="ENVtag" value="option7"> Environmental Issues
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="GUNtag" value="option8"> Gun Rights
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="PRItag" value="option9"> Prison Systems
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="PROCtag" value="option10"> Pro-Choice
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="PROLtag" value="option11"> Pro-Life
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="FDTtag" value="option12"> Anti-Trump
-        </label>
+        <div class="col-xs-8 col-md-8" id="choices">
+          <label class="checkbox-inline col-xs-4 col-sm-3">
+            <input type="checkbox" id="0" value="BLM"> Black Lives Matter
+          </label>
+          <label class="checkbox-inline col-xs-4 col-sm-3">
+            <input type="checkbox" id="1" value="LGBT"> LGBTQ+
+          </label>
+          <label class="checkbox-inline col-xs-4 col-sm-3">
+            <input type="checkbox" id="2" value="FEM"> Women's Rights
+          </label>
+          <label class="checkbox-inline col-xs-4 col-sm-3">
+            <input type="checkbox" id="3" value="IMM"> Immigration Rights
+          </label>
+          <label class="checkbox-inline col-xs-4 col-sm-3">
+            <input type="checkbox" id="4" value="DIS"> Disability Rights
+          </label>
+          <label class="checkbox-inline col-xs-4 col-sm-3">
+            <input type="checkbox" id="5" value="EDU"> Education System
+          </label>
+          <label class="checkbox-inline col-xs-4 col-sm-3">
+            <input type="checkbox" id="6" value="ENV"> Environmental Issues
+          </label>
+          <label class="checkbox-inline col-xs-4 col-sm-3">
+            <input type="checkbox" id="7" value="GUN"> Gun Rights
+          </label>
+          <label class="checkbox-inline col-xs-4 col-sm-3">
+            <input type="checkbox" id="8" value="PRI"> Prison Systems
+          </label>
+          <label class="checkbox-inline col-xs-4 col-sm-3">
+            <input type="checkbox" id="9" value="PROC"> Pro-Choice
+          </label>
+          <label class="checkbox-inline col-xs-4 col-sm-3">
+            <input type="checkbox" id="10" value="PROL"> Pro-Life
+          </label>
+          <label class="checkbox-inline col-xs-4 col-sm-3">
+            <input type="checkbox" id="11" value="HEALTH"> Healthcare
+          </label>
+          <label class="checkbox-inline col-xs-4 col-sm-3">
+            <input type="checkbox" id="12" value="FDT"> Anti-Trump
+          </label>
+        </div>
       </div>
       <button type="button" class="addev" onclick="addEvent()">Submit</button>
     </div>
+  <!--<div class="form-group">
+    <label class="col-sm-2 col-xs-3">Causes</label>
+    <input type="text" class="col-sm-5" placeholder="Causes" id="EvCauses">
+  </div>-->
 <!--      <label class="col-sm-2 col-xs-3">Causes</label>
       <form action="/action_page.php">
         <select name="cars" multiple>
@@ -124,6 +185,7 @@
           <option value="PRI">Prison Systems</option>
           <option value="PROC">Pro-Choice</option>
           <option value="PROL">Pro-Life</option>
+          <option value="HEALTH">Healthcare</option>
           <option value="FDT">Anti-Trump</option>
         </select>
       </form> -->
