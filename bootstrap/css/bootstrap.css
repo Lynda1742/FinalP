@@ -5045,6 +5045,15 @@ a.badge:focus {
 
   }
 }
+.resources {
+  float: left;
+}
+.causes {
+  float: none;
+}
+.causes dt {
+  clear: both;
+}
 .thumbnail {
   display: block;
   padding: 4px;
