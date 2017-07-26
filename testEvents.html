@@ -5,9 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.js"></script>
-  <script src="testEvents.js"></script>
 </head>
 <body>
 
@@ -49,6 +46,7 @@
     <tbody>
     </tbody>
   </table>
+  <div id="dvcontainer"></div>
   <div class="tabKey">
     <p class="h4"><u>Key to Causes:</u></p>
       <dl>
@@ -139,10 +137,14 @@
           </label>
         </div>
       </div>
+      <button type="button" class="addev" onclick="buildTable()">Build</button>
       <button type="button" class="addev" onclick="addEvent()">Submit</button>
+      <button type="button" class="addev" onclick="clearLS()">Clear</button>
     </form>
   </div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="testEvents.js"></script>
 </body>
 </html>
